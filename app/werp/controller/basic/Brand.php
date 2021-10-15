@@ -18,11 +18,6 @@ class Brand
 
     public function test()
     {
-        echo "01110110";
-    }
-
-    public function hello(string $name)
-    {
-        return 'Hello,'.$name;
+        echo "我可以换一个名字么";
     }
 }
