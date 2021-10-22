@@ -12,6 +12,6 @@ class Index
 
     public function hello()
     {
-        echo "lllllllll";
+        echo "is good";
     }
 }

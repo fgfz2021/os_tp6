@@ -16,8 +16,9 @@ class Brand
         return view('index');
     }
 
-    public function test()
+    public function test($id = 3)
     {
-        echo "我可以换一个名字么";
+        echo "你这是什么拳法";
+        echo $id;
     }
 }
