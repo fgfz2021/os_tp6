@@ -9,4 +9,9 @@ class Index
     {
         return view('index/index');
     }
+
+    public function hello()
+    {
+        echo "lllllllll";
+    }
 }

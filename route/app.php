@@ -15,3 +15,5 @@ Route::get('think', function () {
 });
 
 Route::get('hello/:name', 'index/hello');
+
+Route::get('product/Product/index', '\app\controller\werp\basic\Brand\test');
