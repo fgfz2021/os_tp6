@@ -10,10 +10,6 @@ return [
     'app_namespace'    => '',
     // 是否启用路由
     'with_route'       => true,
-    // 默认应用
-    'default_app'      => 'index',
-
-    'url_route_must'		=>  true,
 
     // 默认时区
     'default_timezone' => 'Asia/Shanghai',

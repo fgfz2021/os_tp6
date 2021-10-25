@@ -20,5 +20,17 @@ class Brand
     {
         echo "你这是什么拳法";
         echo $id;
+        echo "<br>";
+        $url = url('bb_test', ['id' => 10]);
+
+        print_r($url);exit;
+
+    }
+
+    public function fan($name = "傻明")
+    {
+        echo $name."这个名字";
+        echo "不是我想要的";
+        exit;
     }
 }
