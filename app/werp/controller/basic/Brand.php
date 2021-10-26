@@ -9,8 +9,20 @@
 namespace app\werp\controller\basic;
 
 
+use app\middleware\Check;
+use app\Request;
+
 class Brand
 {
+    protected $request;
+
+//    protected $middleware = [Check::class];
+
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+
     public function index()
     {
         return view('index');
@@ -27,10 +39,15 @@ class Brand
 
     }
 
-    public function fan($name = "傻明")
+    public function hello($name = 3)
     {
-        echo $name."这个名字";
-        echo "不是我想要的";
-        exit;
+        echo "44444444444444444444444444";
+//        return 'Hello,' . $name . '！This is '. $this->request->action();
     }
+
+    public function think()
+    {
+        echo "thinkphp6";
+    }
+
 }

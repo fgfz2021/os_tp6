@@ -8,8 +8,13 @@ Route::get('/', function () {
 
 // 必须这样写
 Route::get('basic/brand/test/:id', '\app\werp\controller\basic\brand@test');
-Route::get('basic/brand/test', '\app\werp\controller\basic\brand@test');
-Route::get('look', 'basic.Brand/test')->name('bb_test');
+//Route::get('basic/brand/test', '\app\werp\controller\basic\brand@test');
+//Route::get('look', 'basic.Brand/test')->name('bb_test');
 
 Route::redirect('blog/:id', 'http://blog.thinkphp.cn/:id', 302);
 
+Route::get('basic/brand/hello/:name', 'basic.Brand/hello')->middleware(\app\middleware\Check::class);
+//Route::get('basic/brand/hello/:id', '\app\werp\controller\basic\brand@hello');
+
+// 只有GET请求下MISS路由有效
+//Route::miss('\app\common\controller\index@miss', 'get');
