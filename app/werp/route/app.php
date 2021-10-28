@@ -13,7 +13,7 @@ Route::get('basic/brand/test/:id', '\app\werp\controller\basic\brand@test');
 
 Route::redirect('blog/:id', 'http://blog.thinkphp.cn/:id', 302);
 
-Route::get('basic/brand/hello/:name', 'basic.Brand/hello')->middleware(\app\middleware\Check::class);
+Route::get('basic/brand/hello', 'basic.Brand/hello');
 //Route::get('basic/brand/hello/:id', '\app\werp\controller\basic\brand@hello');
 
 // 只有GET请求下MISS路由有效

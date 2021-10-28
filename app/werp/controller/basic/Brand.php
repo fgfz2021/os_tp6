@@ -8,15 +8,12 @@
 
 namespace app\werp\controller\basic;
 
-
-use app\middleware\Check;
 use app\Request;
 
 class Brand
 {
     protected $request;
 
-//    protected $middleware = [Check::class];
 
     public function __construct(Request $request)
     {
@@ -39,10 +36,19 @@ class Brand
 
     }
 
-    public function hello($name = 3)
+    public function hello()
     {
-        echo "44444444444444444444444444";
-//        return 'Hello,' . $name . '！This is '. $this->request->action();
+        $a = array();
+
+        $b = NULL;
+
+        if ($a == $b) {
+            echo 1111111111;
+        } else {
+            echo 2222222222;
+        }
+
+        return 'Hello！This is '. $this->request->action();
     }
 
     public function think()
